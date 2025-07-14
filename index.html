@@ -4,11 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Vaishnavi | Home</title>
-  <link rel="img" href="python.png">
-  <link rel="stylesheet" href="pythoninfo.png"> 
-  <link rel="img" href="tailwing.png">
-  
-  <link rel="img" href="mypic.jpg">
   <style>
     /* Reset and basic setup */
     * {
@@ -30,27 +25,32 @@
       justify-content: space-between;
       align-items: center;
       padding: 15px 30px;
+      flex-wrap: nowrap; /* Prevent wrapping on smaller screens */
+      overflow-x: auto; /* Add horizontal scroll if needed */
     }
 
-    .navbar .logo {
+    .logo {
       font-size: 24px;
       font-weight: bold;
       color: white;
+      white-space: nowrap;
     }
 
-    .navbar ul {
+    .nav-links {
       list-style: none;
       display: flex;
       gap: 20px;
+      flex-wrap: nowrap;
+      white-space: nowrap;
     }
 
-    .navbar ul li a {
+    .nav-links li a {
       text-decoration: none;
       color: white;
       font-weight: bold;
     }
 
-    .navbar ul li a:hover {
+    .nav-links li a:hover {
       text-decoration: underline;
     }
 
@@ -94,26 +94,17 @@
       margin-top: 50px;
     }
 
-    /* Responsive */
+    /* Remove navbar changes on small screen */
     @media (max-width: 768px) {
       .navbar {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        align-items: center;
       }
 
-      .navbar ul {
-        flex-direction: column;
+      .nav-links {
+        flex-direction: row;
         gap: 10px;
-        padding-top: 10px;
-      }
-
-      .home h1 {
-        font-size: 26px;
-      }
-
-      .home img {
-        width: 100px;
-        height: 100px;
+        padding-top: 0;
       }
     }
   </style>
