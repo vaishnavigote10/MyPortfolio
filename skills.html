@@ -1,0 +1,125 @@
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      padding: 40px 20px;
+    }
+
+    .skills-section {
+      background-color: #fff;
+      max-width: 700px;
+      margin: auto;
+      padding: 40px 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 40px;
+      color: #1e1e2f;
+    }
+
+    .skill {
+      margin-bottom: 25px;
+    }
+
+    .skill label {
+      font-weight: 600;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    .progress-bar {
+      width: 100%;
+      background-color: #eee;
+      border-radius: 20px;
+      overflow: hidden;
+      height: 25px;
+    }
+
+    .progress-fill {
+      height: 100%;
+      line-height: 25px;
+      padding-left: 10px;
+      color: white;
+      font-weight: bold;
+    }
+
+    .progress-fill.html {
+      width: 80%;
+      background-color: #6fcf97; /* Soft green */
+    }
+
+    .progress-fill.css {
+      width: 75%;
+      background-color: #56ccf2; /* Soft blue */
+    }
+
+    .progress-fill.java {
+      width: 65%;
+      background-color: #f2c94c; /* Soft yellow */
+    }
+
+    .progress-fill.cprog {
+      width: 70%;
+      background-color: #bb6bd9; /* Soft purple */
+    }
+
+    @media (max-width: 600px) {
+      .section-title {
+        font-size: 24px;
+      }
+
+      .progress-fill {
+        font-size: 14px;
+        padding-left: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="skills-section">
+    <h2 class="section-title">My Skills</h2>
+
+    <div class="skill">
+      <label>HTML</label>
+      <div class="progress-bar">
+        <div class="progress-fill html">80%</div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <label>CSS</label>
+      <div class="progress-bar">
+        <div class="progress-fill css">75%</div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <label>Java</label>
+      <div class="progress-bar">
+        <div class="progress-fill java">65%</div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <label>C Programming</label>
+      <div class="progress-bar">
+        <div class="progress-fill cprog">70%</div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
